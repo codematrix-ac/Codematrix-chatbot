@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeMatrix Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+    #chatBox {
+      border: 1px solid #00ffcc;
+      padding: 10px;
+      width: 300px;
+      margin: 0 auto;
+      background-color: #444;
+    }
+    #chatBox input {
+      width: 200px;
+      padding: 5px;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+    #chatBox button {
+      padding: 5px 10px;
+      background-color: #00ffcc;
+      border: none;
+      border-radius: 5px;
+      color: #000;
+      cursor: pointer;
+    }
+    #chatResponse {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>CodeMatrix Chatbot</h1>
+  <p>CodeMatrix saytında chatbot ilə suallar verə bilərsiniz!</p>
+
+  <!-- Chatbot divi -->
+  <div id="chatBox">
+    <input type="text" id="userInput" placeholder="Suallarınızı yazın..." />
+    <button onclick="chat()">Göndər</button>
+    <div id="chatResponse"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
